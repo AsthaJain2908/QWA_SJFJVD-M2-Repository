@@ -29,6 +29,11 @@ public class Google_InspectUsingRobotClass_ActionsContextClick {
 		
 		// create Object for Robot Class
 		Robot r = new Robot();
+		
+		// Or We can use End also 
+		//r.keyPress(KeyEvent.VK_END);
+		//r.keyRelease(KeyEvent.VK_END);
+		
 		r.keyPress(KeyEvent.VK_DOWN);
 		r.keyRelease(KeyEvent.VK_DOWN);
 		r.keyPress(KeyEvent.VK_DOWN);
@@ -48,6 +53,7 @@ public class Google_InspectUsingRobotClass_ActionsContextClick {
 		r.keyPress(KeyEvent.VK_DOWN);
 		r.keyRelease(KeyEvent.VK_DOWN);
 		r.keyPress(KeyEvent.VK_DOWN);
-		r.keyRelease(KeyEvent.VK_DOWN);
+		
+		r.keyPress(KeyEvent.VK_ENTER);
 	}
 }
