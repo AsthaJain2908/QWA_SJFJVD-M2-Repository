@@ -43,7 +43,5 @@ public class ScreenshotofParticularWebElement {
 		File dest = new File("./screenshot/coinsbydesign50gmcoin.png");
 		
 		Files.copy(src, dest);
-		
 	}
-
 }
