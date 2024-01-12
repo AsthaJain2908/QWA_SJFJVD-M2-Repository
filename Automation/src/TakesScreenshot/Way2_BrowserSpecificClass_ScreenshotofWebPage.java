@@ -5,35 +5,31 @@ import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.OutputType;
-import org.openqa.selen
-ium.TakesScreenshot;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.google.common.io.Files;
 
-public class Way1_ExplicitTypecasting {
+public class Way2_BrowserSpecificClass_ScreenshotofWebPage {
 	
 	public static void main(String[] args) throws IOException {
 		
-		WebDriver driver = new ChromeDriver();
+		ChromeDriver driver = new ChromeDriver();
 		
 		driver.manage().window().maximize();
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
-		driver.get("https://www.apple.com/iphone/");
+		driver.get("https://www.apple.com/in/iphone/");
+
+		// to use getScreenshotAs Method
+		File src = driver.getScreenshotAs(OutputType.FILE);
 		
-		//Explicit Typecasting
-		TakesScreenshot ts = (TakesScreenshot) driver;
-		
-		//to use getScreenshot ()
-		File src = ts.getScreenshotAs(OutputType.FILE);
-		
-		//Create a new file and store it in one Folder
-		File dest = new File("./screenshot/iphone.png");
+		// create a new file and pass the path where you want to store you screenshot
+		File dest = new File("./screenshot/iphone1.png");
 		
 		// copy from src to dest
-		Files.copy(src, dest);
+		Files.copy(src, dest);		
 	}
 }

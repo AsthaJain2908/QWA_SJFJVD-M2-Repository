@@ -42,8 +42,6 @@ public class WorkingWithRobotClass_OrangeHrm {
 		r.keyPress(KeyEvent.VK_CONTROL); //press ctrl
 		r.keyPress(KeyEvent.VK_V);       // press V = ctrl+V
 		r.keyRelease(KeyEvent.VK_CONTROL); // release = ctrl
-		r.keyRelease(KeyEvent.VK_V);    // release V = ctrl+V
-		 
+		r.keyRelease(KeyEvent.VK_V);    // release V = ctrl+V		 
 	}
-
 }
