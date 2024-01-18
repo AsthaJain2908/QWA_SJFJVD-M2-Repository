@@ -58,7 +58,7 @@ public class Actitime_CreateUserAndDisableUser {
 		d.findElement(By.xpath("//input[@value='   Create User   ']")).click();		
 		
 		// Print Text of Username
-		WebElement username = d.findElement(By.xpath("//a[text()='Dor, Doremo (T)']"));
+		WebElement username = d.findElement(By.xpath("//a[@href='/administration/useredit.do?noReload=false&userId=35']"));
 		
 		String text = username.getText();
 		

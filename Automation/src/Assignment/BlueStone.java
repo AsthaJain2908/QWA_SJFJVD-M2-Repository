@@ -29,22 +29,22 @@ public class BlueStone {
 		
 		d.findElement(By.xpath("//span[@class='deny-btn']")).click();
 		
-		 WebElement coins = d.findElement(By.xpath("//a[@title='Coins']"));
+		WebElement coins = d.findElement(By.xpath("//a[@title='Coins']"));
 		 
-		 Actions a = new Actions(d);
+		Actions a = new Actions(d);
 		 
-		 a.moveToElement(coins).perform();
+		a.moveToElement(coins).perform();
 		 
-		 //d.findElement(By.xpath("//span[text()='Coins by Design']")).click();
-		 a.doubleClick(d.findElement(By.xpath("//span[text()='Coins by Design']"))).perform();	
+		//d.findElement(By.xpath("//span[text()='Coins by Design']")).click();
+		a.doubleClick(d.findElement(By.xpath("//span[text()='Coins by Design']"))).perform();	
 		
-		 // Take Screenshot of Coin by design Page
-		 TakesScreenshot ts = (TakesScreenshot) d;
+		// Take Screenshot of Coin by design Page
+		TakesScreenshot ts = (TakesScreenshot) d;
 		
-		 File s = ts.getScreenshotAs(OutputType.FILE);	
+		File s = ts.getScreenshotAs(OutputType.FILE);	
 		 
-		 File des = new File("./screenshot/coinsbydesign.png");
+		File des = new File("./screenshot/coinsbydesign.png");
 		 
-		 Files.copy(s, des);
+		Files.copy(s, des);
 	}	
 }
