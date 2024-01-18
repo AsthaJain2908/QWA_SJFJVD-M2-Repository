@@ -19,8 +19,6 @@ public class WrokingWithKeyEnum_Actitime {
 		
 		d.get("http://127.0.0.1/login.do;jsessionid=77n3gkq7nbfrk");
 		
-		d.findElement(By.xpath("//input[@name='username']")).sendKeys("admin",Keys.TAB,"manager",Keys.TAB,Keys.TAB,Keys.ENTER);
-		
+		d.findElement(By.xpath("//input[@name='username']")).sendKeys("admin",Keys.TAB,"manager",Keys.TAB,Keys.TAB,Keys.ENTER);		
 	}
-
 }
