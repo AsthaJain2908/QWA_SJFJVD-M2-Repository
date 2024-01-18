@@ -13,7 +13,7 @@ public class DemoWebShop_Authentication_UsernameandPassword_RobotClass {
 	public static void main(String[] args) throws AWTException, InterruptedException {
 		// TODO Auto-generated method stub
 		
-WebDriver d = new ChromeDriver();
+		WebDriver d = new ChromeDriver();
 		
 		d.manage().window().maximize();
 		

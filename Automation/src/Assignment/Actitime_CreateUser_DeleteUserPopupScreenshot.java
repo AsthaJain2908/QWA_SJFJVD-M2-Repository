@@ -65,6 +65,7 @@ public class Actitime_CreateUser_DeleteUserPopupScreenshot {
 		d.findElement(By.xpath("//input[@value='Delete This User']")).click();
 		Thread.sleep(2000);
 		
+		// For taking screenshot we have to handle the popup so this is for understanding = getting UnhandledAlertException
 		TakesScreenshot ts = (TakesScreenshot) d;
 		File src = ts.getScreenshotAs(OutputType.FILE);
 		File des = new File("./screenshot/DeleteUserPopup.png");
