@@ -28,6 +28,6 @@ public class WorkingWithScrollIntoViewMethod_ScrollTillParticularWebElement {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		
 		js.executeScript("arguments[0].scrollIntoView(true)", scrollTill);
-		//js.executeScript("arguments[0].scrollIntoView(true)", scrollTill);
+		//js.executeScript("arguments[0].scrollIntoView(false)", scrollTill);
 	}
 }
