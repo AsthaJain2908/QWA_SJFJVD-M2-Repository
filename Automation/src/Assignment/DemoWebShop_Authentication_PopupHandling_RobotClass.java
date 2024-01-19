@@ -8,7 +8,7 @@ import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class DemoWebShop_Authentication_UsernameandPassword_RobotClass {
+public class DemoWebShop_Authentication_PopupHandling_RobotClass {
 
 	public static void main(String[] args) throws AWTException, InterruptedException {
 		// TODO Auto-generated method stub
@@ -24,30 +24,30 @@ public class DemoWebShop_Authentication_UsernameandPassword_RobotClass {
 		Robot r = new Robot();
 		
 		// Username
-		r.keyPress(KeyEvent.VK_CAPS_LOCK);
-		r.keyPress(KeyEvent.VK_SHIFT);
+		//r.keyPress(KeyEvent.VK_CAPS_LOCK);
+		//r.keyPress(KeyEvent.VK_SHIFT);
 		r.keyPress(KeyEvent.VK_A);
-		r.keyRelease(KeyEvent.VK_SHIFT);
+		//r.keyRelease(KeyEvent.VK_SHIFT);
 		r.keyRelease(KeyEvent.VK_A);
 		
-		r.keyPress(KeyEvent.VK_SHIFT);
+		//r.keyPress(KeyEvent.VK_SHIFT);
 		r.keyPress(KeyEvent.VK_D);
-		r.keyRelease(KeyEvent.VK_SHIFT);
+		//r.keyRelease(KeyEvent.VK_SHIFT);
 		r.keyRelease(KeyEvent.VK_D);
 		
-		r.keyPress(KeyEvent.VK_SHIFT);
+		//r.keyPress(KeyEvent.VK_SHIFT);
 		r.keyPress(KeyEvent.VK_M);
-		r.keyRelease(KeyEvent.VK_SHIFT);
+		//r.keyRelease(KeyEvent.VK_SHIFT);
 		r.keyRelease(KeyEvent.VK_M);
 		
-		r.keyPress(KeyEvent.VK_SHIFT);
+		//r.keyPress(KeyEvent.VK_SHIFT);
 		r.keyPress(KeyEvent.VK_I);
-		r.keyRelease(KeyEvent.VK_SHIFT);
+		//r.keyRelease(KeyEvent.VK_SHIFT);
 		r.keyRelease(KeyEvent.VK_I);
 		
-		r.keyPress(KeyEvent.VK_SHIFT);
+		//r.keyPress(KeyEvent.VK_SHIFT);
 		r.keyPress(KeyEvent.VK_N);
-		r.keyRelease(KeyEvent.VK_SHIFT);
+		//r.keyRelease(KeyEvent.VK_SHIFT);
 		r.keyRelease(KeyEvent.VK_N);
 		
 		Thread.sleep(2000);
@@ -56,31 +56,31 @@ public class DemoWebShop_Authentication_UsernameandPassword_RobotClass {
 		r.keyPress(KeyEvent.VK_TAB);
 		Thread.sleep(2000);
 		
-		r.keyPress(KeyEvent.VK_SHIFT);
+		//r.keyPress(KeyEvent.VK_SHIFT);
 		r.keyPress(KeyEvent.VK_A);
-		r.keyRelease(KeyEvent.VK_SHIFT);
+		//r.keyRelease(KeyEvent.VK_SHIFT);
 		r.keyPress(KeyEvent.VK_A);
 		
-		r.keyPress(KeyEvent.VK_SHIFT);
+		//r.keyPress(KeyEvent.VK_SHIFT);
 		r.keyPress(KeyEvent.VK_D);
-		r.keyRelease(KeyEvent.VK_SHIFT);
+		//r.keyRelease(KeyEvent.VK_SHIFT);
 		r.keyRelease(KeyEvent.VK_D);
 		
-		r.keyPress(KeyEvent.VK_SHIFT);
+		//r.keyPress(KeyEvent.VK_SHIFT);
 		r.keyPress(KeyEvent.VK_M);
-		r.keyRelease(KeyEvent.VK_SHIFT);
+		//r.keyRelease(KeyEvent.VK_SHIFT);
 		r.keyRelease(KeyEvent.VK_M);
 		
-		r.keyPress(KeyEvent.VK_SHIFT);
+		//r.keyPress(KeyEvent.VK_SHIFT);
 		r.keyPress(KeyEvent.VK_I);
-		r.keyRelease(KeyEvent.VK_SHIFT);
+		//r.keyRelease(KeyEvent.VK_SHIFT);
 		r.keyRelease(KeyEvent.VK_I);
 		
-		r.keyPress(KeyEvent.VK_SHIFT);
+		//r.keyPress(KeyEvent.VK_SHIFT);
 		r.keyPress(KeyEvent.VK_N);
-		r.keyRelease(KeyEvent.VK_SHIFT);
+		//r.keyRelease(KeyEvent.VK_SHIFT);
 		r.keyRelease(KeyEvent.VK_N);
-		r.keyRelease(KeyEvent.VK_CAPS_LOCK);
+		//r.keyRelease(KeyEvent.VK_CAPS_LOCK);
 		Thread.sleep(2000);
 		
 		// Click on Signin
