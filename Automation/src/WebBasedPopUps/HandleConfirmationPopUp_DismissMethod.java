@@ -1,4 +1,4 @@
-package PopUps;
+package WebBasedPopUps;
 
 import java.time.Duration;
 
@@ -7,9 +7,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class HandleAlertPopUp_AcceptMethod {
-	
+public class HandleConfirmationPopUp_DismissMethod {
+
 	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
 		
 		WebDriver driver = new ChromeDriver();
 		
@@ -19,13 +20,17 @@ public class HandleAlertPopUp_AcceptMethod {
 		
 		driver.get("https://demoapps.qspiders.com/alert?sublist=0");
 		
-		driver.findElement(By.id("buttonAlert2")).click();
+		driver.findElement(By.xpath("//a[text()='Confirm']")).click();
 		
-		// Handle Alert using accept()
+		driver.findElement(By.id("buttonAlert5")).click();
+		
+		// Handle Confirmation popup using dismiss()
 		Alert alt = driver.switchTo().alert();	
-		
+		//alt.accept(); if we want to click on OK		
 		Thread.sleep(2000);
-		alt.accept();
+		// Click on Cancel
+		alt.dismiss();
+
 	}
 
 }

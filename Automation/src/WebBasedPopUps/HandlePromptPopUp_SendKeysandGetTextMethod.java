@@ -1,4 +1,4 @@
-package PopUps;
+package WebBasedPopUps;
 
 import java.time.Duration;
 
