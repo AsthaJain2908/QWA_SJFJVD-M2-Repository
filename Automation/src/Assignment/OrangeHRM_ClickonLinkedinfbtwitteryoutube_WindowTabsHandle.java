@@ -34,7 +34,9 @@ public class OrangeHRM_ClickonLinkedinfbtwitteryoutube_WindowTabsHandle {
 		for(String id:all_Id)
 		{
 			d.switchTo().window(id);
+			// We can use getTitle() and getCurrentUrl()
 			if (d.getTitle().equals("OrangeHRM | LinkedIn"))
+			//if (d.getCurrentUrl().equals("https://www.linkedin.com/company/orangehrm?original_referer=https%3A%2F%2Fopensource-demo.orangehrmlive.com%2F"))
 			{
 				System.out.println(d.getTitle());
 				break;
