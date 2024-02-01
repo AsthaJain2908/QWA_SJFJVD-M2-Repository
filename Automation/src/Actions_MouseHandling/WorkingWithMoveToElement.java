@@ -28,6 +28,7 @@ public class WorkingWithMoveToElement {
 		
 		Thread.sleep(2000);
 		driver.quit();
+	
 	}
 
 }
