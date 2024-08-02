@@ -1,16 +1,15 @@
+package DataDrivenFramework;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
-public class WritingDataInExcelSheet {
+public class FetchRowCount {
 
 	public static void main(String[] args) throws EncryptedDocumentException, IOException {
 		// TODO Auto-generated method stub
@@ -21,17 +20,10 @@ public class WritingDataInExcelSheet {
 		
 		Sheet sheet = book.getSheet("Valid");
 		
-		Row row = sheet.getRow(1);
+		int count = sheet.getLastRowNum();
 		
-		Cell cell = row.createCell(2);
-		
-		cell.setCellValue("Pass");
-		
-		FileOutputStream fos = new FileOutputStream("./src/test/resources/TestData.xlsx");
-		
-		book.write(fos);
-		
-		System.out.println("Data Sent Successfully");
-		
+		System.out.println(count);
+
 	}
+
 }
