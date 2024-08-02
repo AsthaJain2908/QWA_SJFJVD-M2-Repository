@@ -46,5 +46,5 @@ public class ActiTimeLoginandCreateCustomerLogout {
 		d.findElement(By.xpath("//a[text()='Logout']")).click();
 		
 	}
-
+}
 }

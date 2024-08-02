@@ -8,7 +8,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.sel	enium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.google.common.io.Files;
 

@@ -45,5 +45,5 @@ public static void main(String[] args) throws InterruptedException {
 		
 		d.findElement(By.xpath("//a[text()='Logout']")).click();
 		
-	
+}	
 }
